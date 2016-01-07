@@ -74,8 +74,17 @@ public class BibliotecaMenuTest {
     }
 
     @Test
-    @Ignore
-    public void readOptionShouldReturnNumberOneOption() {
+    public void readOptionShouldReturnFirstOption() throws InvalidOptionException {
+        MenuOption expected = options.get(0);
+        String firstOption = "1";
+        ByteArrayInputStream firstOptionInput = new ByteArrayInputStream(firstOption.getBytes());
+        Scanner reader = new Scanner(firstOptionInput);
+        menu = new BibliotecaMenu(reader, options);
+
+
+        MenuOption actual = menu.readOption();
+
+        assertEquals(expected, actual);
 
     }
 
