@@ -1,15 +1,15 @@
 package com.twu.biblioteca;
 
-/**
- * Created by yrachid on 1/7/16.
- */
+import com.twu.biblioteca.ui.BibliotecaTerminal;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        BibliotecaApp app = new BibliotecaApp();
+        BibliotecaApp app = new BibliotecaApp(new BibliotecaTerminal());
 
         app.run();
+
     }
 
 }
