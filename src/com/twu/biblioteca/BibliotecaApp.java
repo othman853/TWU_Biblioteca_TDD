@@ -4,6 +4,8 @@ public class BibliotecaApp {
 
     public void run () {
 
+        System.out.println("Hello! Welcome to Biblioteca");
+
     }
 
 }

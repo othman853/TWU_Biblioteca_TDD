@@ -33,7 +33,7 @@ public class BibliotecaAppTest {
 
         biblioteca.run();
 
-        assertEquals("Hello! Welcome to Biblioteca", output.toString());
+        assertEquals("Hello! Welcome to Biblioteca\n", output.toString());
 
     }
 
