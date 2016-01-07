@@ -39,4 +39,13 @@ public class MenuOption<T> {
     public String toString() {
         return identifier.toString() + ": " + text;
     }
+
+    @Override
+    public boolean equals(Object external) {
+        MenuOption other = (MenuOption) external;
+
+        return identifier.equals(other.getIdentifier()) &&
+                text.equals(other.getText()) &&
+                quit == other.isQuit();
+    }
 }
